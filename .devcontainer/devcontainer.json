@@ -38,7 +38,7 @@
 			// This setting is set with regard to place where the postCreateComand installs
 			// the venv. If you change the location, you need to change the path here as well.
 			"settings": { 
-				"python.defaultInterpreterPath": "/workspaces/devcontainer-pytorch-template/.venv",
+				"python.defaultInterpreterPath": "/workspaces/devcontainer-dvc-template",
 				"terminal.integrated.shell.linux": "/bin/bash"
 			},
 			
