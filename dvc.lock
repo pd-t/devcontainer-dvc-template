@@ -1,0 +1,17 @@
+schema: '2.0'
+stages:
+  test:
+    cmd: PYTHONPATH="." python3 src/test.py
+    deps:
+    - path: src/test.py
+      hash: md5
+      md5: b3cec456e4ffe1f0b1ab860d2ea09295
+      size: 382
+    params:
+      params.yaml:
+        data.seed: 42
+    outs:
+    - path: data/data.json
+      hash: md5
+      md5: 757d39fda3c6ddb357a7b040e83189ef
+      size: 12
