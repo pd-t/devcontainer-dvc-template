@@ -1,0 +1,5 @@
+[core]
+    remote = s3-storage
+['remote "s3-storage"']
+    url = s3://dvc
+    endpointurl = https://smart-cybersecurity-aidocs.fra1.digitaloceanspaces.com

@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "src"
 version = "0.0.1"
-description = "A pytorch devcontainer template with CUDA support"
+description = "A devcontainer template with dvc support."
 authors = ["Thomas Fraunholz <tf@sourcemaker.org>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0.0"
-matplotlib = "^3.8.2"
-seaborn = "^0.13.0"
+dvc = "^3.2.3"
+dvc-s3 = "^2.22.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"

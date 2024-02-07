@@ -1,0 +1,19 @@
+stages:
+  load:
+    cmd: PYTHONPATH="." python3 src/load.py
+    params:
+      - data.seed
+    deps:
+      - src/load.py
+    outs:
+      - data/load.dir
+
+  prepare:
+    cmd: PYTHONPATH="." python src/prepare.py
+    deps:
+      - data/load.dir
+      - src/prepare.py
+    outs:
+      - data/prepare.dir
+    metrics:
+      - data/data.json
